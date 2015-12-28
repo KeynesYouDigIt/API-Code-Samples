@@ -1,6 +1,6 @@
-import urllib2
-import httplib
-import requests
+import urllib
+import http.client
+#import requests
 import base64
 import string
 import json
@@ -64,7 +64,7 @@ def parseHTTPHeaders(raw, desired, returnType = 'string'):
 			
 	if returnType == 'string':
 		return ",".join(parsedHeaders)
-	else 
+	else:
 		return parsedHeaders
 		
 		
